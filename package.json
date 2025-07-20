@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "is-in-ci || lefthook install"
   },
   "dependencies": {
     "next": "15.4.2",
@@ -22,7 +23,14 @@
     "@types/react-dom": "^19",
     "eslint": "^9.31.0",
     "eslint-config-next": "15.4.2",
+    "is-in-ci": "^1.0.0",
+    "lefthook": "^1.12.2",
     "prettier": "^3.6.2",
     "typescript": "^5"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "lefthook"
+    ]
   }
 }
