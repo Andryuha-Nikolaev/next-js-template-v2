@@ -13,7 +13,7 @@
 @mixin create($properties...) {
 	$kw: meta.keywords($properties);
 
-	$duration: -or-default(map.get($kw, "duration"), var(--transition-duration));
+	$duration: -or-default(map.get($kw, "duration"), 0.3s);
 	$timing-function: -or-default(map.get($kw, "timing-function"), ease);
 	$delay: map.get($kw, "delay");
 

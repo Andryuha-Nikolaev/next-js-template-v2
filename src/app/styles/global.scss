@@ -1,4 +1,5 @@
 @use "$styles/variables/colors";
+@use "$styles/mixins/typography";
 
 html {
 	font-size: var(--font-size_small);
@@ -28,6 +29,30 @@ body {
 	font-weight: 400;
 	background-color: colors.$black;
 	color: colors.$white;
+}
+
+h1 {
+	@include typography.h1;
+}
+
+h2 {
+	@include typography.h2;
+}
+
+h3 {
+	@include typography.h3;
+}
+
+h4 {
+	@include typography.h4;
+}
+
+p {
+	@include typography.main-text;
+}
+
+small {
+	@include typography.small-text;
 }
 
 a,
