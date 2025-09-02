@@ -3,7 +3,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"dev": "next dev --turbopack",
+		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
@@ -26,6 +26,7 @@
 		"is-in-ci": "^1.0.0",
 		"lefthook": "^1.12.2",
 		"prettier": "^3.6.2",
+		"sass": "^1.91.0",
 		"typescript": "^5"
 	},
 	"packageManager": "pnpm@10.15.1",
